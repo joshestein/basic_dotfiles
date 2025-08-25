@@ -71,7 +71,7 @@ for item in "$DOTFILES_DIR"/.??* "$DOTFILES_DIR"/*; do
         if [[ "$filename" == .* ]]; then
             # Skip special dotfiles
             case "$filename" in
-                ".git"|".gitignore"|".DS_Store")
+                ".gitignore"|".DS_Store")
                     echo -e "${YELLOW}Skipping: $filename${NC}"
                     continue
                     ;;
@@ -86,7 +86,7 @@ for item in "$DOTFILES_DIR"/.??* "$DOTFILES_DIR"/*; do
         if [[ "$filename" != .* ]]; then  # Skip hidden directories like .git
             # Skip special directories and files
             case "$filename" in
-                "tmux"|".git"*)
+                "tmux")
                     echo -e "${YELLOW}Skipping special directory: $filename${NC}"
                     continue
                     ;;
