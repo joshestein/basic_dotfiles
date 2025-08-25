@@ -59,6 +59,7 @@ colors
 [ -f $XDG_CONFIG_HOME/shell/tmux.zsh ] && source $XDG_CONFIG_HOME/shell/tmux.zsh
 [ -f $XDG_CONFIG_HOME/shell/venv.zsh ] && source $XDG_CONFIG_HOME/shell/venv.zsh
 
+source <(fzf --zsh)
 export FZF_CTRL_T_COMMAND="fd --hidden --follow"
 
 bindkey '^P' fzf-cd-widget
