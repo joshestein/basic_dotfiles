@@ -54,10 +54,10 @@ fi
 unset _comp_files
 colors
 
-source ./shell/functions.zsh
-source ./shell/git.zsh
-source ./shell/tmux.zsh
-source ./shell/venv.zsh
+[ -f $XDG_CONFIG_HOME/shell/functions.zsh ] && source $XDG_CONFIG_HOME/shell/functions.zsh
+[ -f $XDG_CONFIG_HOME/shell/git.zsh ] && source $XDG_CONFIG_HOME/shell/git.zsh
+[ -f $XDG_CONFIG_HOME/shell/tmux.zsh ] && source $XDG_CONFIG_HOME/shell/tmux.zsh
+[ -f $XDG_CONFIG_HOME/shell/venv.zsh ] && source $XDG_CONFIG_HOME/shell/venv.zsh
 
 alias -- ...=../..
 alias -- ....=../../..
